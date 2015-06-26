@@ -1,5 +1,5 @@
 var classe = 1;
-var cidade = 1;
+var cidade = 2;
 
 $('#cidade').change(function() {
 	cidade = $('#cidade').val();
@@ -16,7 +16,6 @@ montaGraficos(cidade, classe)
 function montaGraficos(cidade, classe){
 	//var url = "/checkins/?classe=1&cidade=2";
 	var url = "/checkins/?classe=" + classe + "&cidade=" + cidade;
-	console.log(classe, cidade);
 
 	d3.json(url, function(error, checkinsJson) {
 
@@ -233,7 +232,7 @@ function distribuicao(dados){
 
 function histograma(values, max){
 	$("#distribuicao-chart").empty();
-	console.log(max);
+	//console.log(max);
 
 	var formatCount = d3.format(",.0f");
 	var margin = {top: 10, right: 30, bottom: 30, left: 30},
