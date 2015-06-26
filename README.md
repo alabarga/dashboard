@@ -3,7 +3,7 @@
 Este projeto foi desenvolvido para a disciplina de Visualização de Dados do PPGCC-UFMG.
 
 O objetivo principal é aplicar os conceitos da disciplina em algo prático. Neste projeto existem diversas formas de visualização de dados.
-Alguns dados são grandes e estão em arquivos de texto . :( Por isso em alguns momentos a visualização pode ficar lenta.
+Alguns dados são grandes e estão em arquivos de texto. :( Por isso em alguns momentos a visualização pode ficar lenta.
 
 Estreando no projeto Python, Flask, DC.js, D3.js, Crossfilter.js, Keen.IO e Google App Engine, com participação especial do jQuery. Você pode ver este projeto rodando [aqui](fluid-mind-93917.appspot.com).
 
@@ -27,7 +27,5 @@ O [Keen.IO](http://keen.github.io/dashboards/) é quem deixa este Dashboard com 
 
 Esta aplicação está hospedada no Google App Engine. Para usar o GAE com Python, instale o [App Engine Python SDK](https://developers.google.com/appengine/downloads) e siga as instruções.
 
-#### PSs
 
-PS.1: Eu não sou expert nessas tecnologias, então você deve encontrar umas gambiarras pelo caminho. Se este for o caso, pode me dar um feedback. Gostaria de aprender mais!
-PS.2: Contei com a ajuda maravilhosa dessa coisa chamada internet.
+PS.: Eu não sou expert nessas tecnologias, então você deve encontrar umas gambiarras pelo caminho. Se este for o caso, pode me dar um feedback. Gostaria de aprender mais!
