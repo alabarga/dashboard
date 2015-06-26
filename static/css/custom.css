@@ -1,0 +1,49 @@
+#precos-legenda {
+	float:left;
+	width: 150px;
+	height: 150px;
+	text-align:left;
+}
+
+.quadradinho{
+	width: 13px;
+	height: 13px;
+	background: #ff7373;
+  	float:left;
+}
+
+.elemento-legenda{
+	display: table-row;
+
+}
+.alerta{
+	border-radius: 40px / 20px ;
+	border: 5px solid #2b6487;
+	padding: 20px;
+	background-color: #2b6487;
+	opacity: 0.4;
+}
+
+.texto-legenda{
+	float:left;
+	margin-left: 10px;
+}
+
+#numero-checkins-nd {
+    font-size: 60px;
+}
+
+.bar rect {
+  fill: steelblue;
+  shape-rendering: crispEdges;
+}
+
+.bar text {
+  fill: #bab5b5;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

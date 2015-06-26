@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Dashboard - Check-ins de Turistas e Residentes</a>
+      </div>
+      <div class="navbar-filters">
+        <label >
+          Cidade
+          <select id="cidade" class="navbar-filters-options">
+            <!-- <option value="0" selected>Todas</option> -->
+            <option value="1">Nova Iorque</option>
+            <option value="3">Londres</option>
+            <option value="2">Rio de Janeiro</option>
+            <option value="4">Tóquio</option>
+          </select>
+        </label>
+        <label >
+          Classe
+          <select id="classe" class="navbar-filters-options">
+            <!-- <option value="0" selected>Ambos</option> -->
+            <option value="1">Turista</option>
+            <option value="2">Residente</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div id="alerta" class="alerta" hidden>Escolha a cidade e a classe de usuários</div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="row">
+
+          <!-- check-ins por hora -->
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Check-ins ao longo do dia
+              </div>
+              <div class="chart-stage">
+                <div id="horario-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- check-ins por hora -->
+
+          <!-- categorias-mae -->
+          <div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Categorias-mãe
+              </div>
+              <div class="chart-stage">
+                <div id="categoria-mae-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- categorias-mae -->
+
+          <!-- data -->
+          <div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Dia
+              </div>
+              <div class="chart-stage">
+                <div id="dia-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- data -->
+
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Informações
+          </div>
+          <div class="chart-stage">
+            <p>Dados coletados entre 09 e 15 de Abril de 2012 a partir de check-ins do Foursquare compartilhados no Twitter publicamente.</p>
+            <p>As informações extraídas aqui são utilizadas no projeto de pesquisa "Utilizando Redes de Sensoriamento Participativo no Estudo do Comportamento de Turistas e Residentes".</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- total de checkins -->
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Total de check-ins
+          </div>
+          <div class="chart-stage">
+            <div id="numero-checkins-nd"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- total de checkins -->
+
+      <!-- check-ins por preço do local -->
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+            <div class="chart-title">
+              Preço dos locais dos check-ins
+            </div>
+            <div class="chart-stage">
+              <div id="precos-chart"></div>
+              <div id="precos-legenda">
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- check-ins por preço do local -->
+
+    </div>
+
+  </div>
+
+<div class="row">
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">Lugares agrupados por Razão</div>
+
+          <table class='table table-hover dc-data-table' id='data-table-ranking'>
+              <thead>
+                  <tr class='header'>
+                      <th>Nome</th>
+                      <th>Categoria-filha</th>
+                      <th>Check-ins</th>
+                      <th>Likes no FS</th>
+                      <th>Localização</th>
+                  </tr>
+              </thead>
+          </table>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">Distribuição dos check-ins</div>
+          <div class="chart-stage">
+            <div id="distribuicao-chart" class="bar"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <p class="small text-muted">Código disponível no <a href="https://github.com/anapaulagomes/dashboard">GitHub</a> &#9829; </p>
+  </div>
+
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/d3.js"></script>
+  <script src="./static/lib/js/dc.js"></script>
+  <script src="./static/lib/js/crossfilter.js"></script>
+  <script src="./static/lib/js/queue.js"></script>
+
+
+  <script src="./static/lib/js/keen.min.js"></script>
+  <script src='./static/js/charts.js' type='text/javascript'></script>
+</body>
+</html>
