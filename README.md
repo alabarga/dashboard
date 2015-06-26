@@ -5,7 +5,7 @@ Este projeto foi desenvolvido para a disciplina de Visualização de Dados do PP
 O objetivo principal é aplicar os conceitos da disciplina em algo prático. Neste projeto existem diversas formas de visualização de dados.
 Alguns dados são grandes e estão em arquivos de texto. :( Por isso em alguns momentos a visualização pode ficar lenta.
 
-Estreando no projeto Python, Flask, DC.js, D3.js, Crossfilter.js, Keen.IO e Google App Engine, com participação especial do jQuery. Você pode ver este projeto rodando [aqui](fluid-mind-93917.appspot.com).
+Estreando no projeto Python, Flask, DC.js, D3.js, Crossfilter.js, Keen.IO e Google App Engine, com participação especial do jQuery. Você pode ver este projeto rodando [aqui](http://fluid-mind-93917.appspot.com).
 
 ### Flask
 
