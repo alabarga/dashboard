@@ -7,7 +7,7 @@ Alguns dados são grandes e estão em arquivos de texto. :( Por isso em alguns m
 
 Estreando no projeto Python, Flask, DC.js, D3.js, Crossfilter.js, Keen.IO e Google App Engine, com participação especial do jQuery.
 
-![alt text](static/img/dashboard.png "Print do Dashboard")
+![alt text](static/img/dashboard_atualizado.png "Print do Dashboard")
 
 ### Flask
 
